@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { GradientContainer } from './components/Gradient/Gradient.js';
+import { HomeReal } from './components/Home/Home.js';
+import { Home } from './components/Home/Home.js';
+import "./index.css";
+//import {NavBar} from './components/NavBar/NavBar'; 
+import {RouterApp} from './router/RouterApp.js';
+import { BrowserRouter} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = props => {
+    
+
+    return (<>
+    <BrowserRouter>
+        {/*<NavBar/>*/}
+        <RouterApp/>
+    </BrowserRouter>
+    </>);
 }
 
 export default App;
+

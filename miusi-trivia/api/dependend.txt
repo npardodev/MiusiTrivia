@@ -1,0 +1,6 @@
+npm i --save-dev nodemon
+npm i --save-dev axios
+npm i --save-dev express
+
+npm i --save-dev jwks-rsa (JSON web key endpoint)
+npm i --save-dev express-jwt (validación con JSON web tokens)
